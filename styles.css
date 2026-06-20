@@ -6,8 +6,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #f0f4f8;
-  color: #333;
+  background: #1a1a2e;
+  color: #eee;
   line-height: 1.6;
 }
 
@@ -30,12 +30,12 @@ main {
 }
 
 .hero {
-  background: white;
+  background: #16213e;
   padding: 2rem;
   border-radius: 8px;
   text-align: center;
   margin-bottom: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero h2 {
@@ -70,10 +70,10 @@ main {
 }
 
 .card {
-  background: white;
+  background: #16213e;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .card h3 {
