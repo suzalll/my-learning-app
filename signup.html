@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up — CatalogHub</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="signup">
+  <div id="site-header"></div>
+  <main>
+    <section class="form-page">
+      <div class="auth-card reveal">
+        <a href="index.html" class="logo" style="margin-bottom:1.5rem">
+          <span class="logo-mark">C</span>
+          CatalogHub
+        </a>
+        <h1>Start your free trial</h1>
+        <p class="subtitle">14 days free · 500 qualified leads · No credit card required.</p>
+        <form data-auth-form="signup">
+          <div class="form-group">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Work email</label>
+            <input type="email" id="email" name="email" required placeholder="you@company.com" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="company">Company name</label>
+            <input type="text" id="company" name="company" placeholder="Your company">
+          </div>
+          <div class="form-group">
+            <label for="plan">Plan</label>
+            <select id="plan" name="plan">
+              <option value="starter">Starter — ₹4,999/mo</option>
+              <option value="growth" selected>Growth — ₹14,999/mo</option>
+              <option value="agency">Agency — ₹39,999/mo</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Min. 8 characters" minlength="8" autocomplete="new-password">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Create account</button>
+        </form>
+        <p class="form-footer">Already have an account? <a href="login.html">Log in</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

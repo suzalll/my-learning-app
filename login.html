@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in — CatalogHub</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="login">
+  <div id="site-header"></div>
+  <main>
+    <section class="form-page">
+      <div class="auth-card reveal">
+        <a href="index.html" class="logo" style="margin-bottom:1.5rem">
+          <span class="logo-mark">C</span>
+          CatalogHub
+        </a>
+        <h1>Welcome back</h1>
+        <p class="subtitle">Log in to your lead intelligence dashboard.</p>
+        <form data-auth-form="login">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@company.com" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="••••••••" autocomplete="current-password">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Log in</button>
+        </form>
+        <p class="form-footer">Don't have an account? <a href="signup.html">Start free trial</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — CatalogHub</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+  <main>
+    <section class="form-page">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;width:min(100%,900px)">
+        <div class="reveal">
+          <span class="section-label">Contact</span>
+          <h1 style="font-size:2rem;margin:1rem 0">Let's talk about your pipeline</h1>
+          <p style="color:var(--text-secondary);margin-bottom:2rem">Book a demo, request a custom vertical, or ask about Enterprise pricing. We respond within 24 hours.</p>
+          <ul class="pricing-features">
+            <li>Free 30-minute pipeline walkthrough</li>
+            <li>Custom city + category demo run</li>
+            <li>Agency &amp; white-label consultations</li>
+            <li>Enterprise deployment planning</li>
+          </ul>
+        </div>
+        <div class="auth-card reveal">
+          <h1 style="font-size:1.5rem">Send a message</h1>
+          <form data-contact-form style="margin-top:1.5rem">
+            <div class="form-group">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com">
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company name">
+            </div>
+            <div class="form-group">
+              <label for="interest">I'm interested in</label>
+              <select id="interest" name="interest">
+                <option>Free trial</option>
+                <option>Agency / white-label plan</option>
+                <option>Enterprise deployment</option>
+                <option>Custom pipeline run</option>
+                <option>Partnership</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your target market, city, and industry..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <style>
+    @media (max-width:768px) {
+      .form-page > div { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</body>
+</html>

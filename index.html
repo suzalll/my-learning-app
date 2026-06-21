@@ -3,43 +3,360 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Learning App</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="CatalogHub — AI-powered lead generation engine that discovers, scrapes, scores, and delivers qualified business leads from Instagram and social commerce.">
+  <title>CatalogHub — Qualified Lead Intelligence for Growing Businesses</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-  <header>
-    <h1>My Learning App</h1>
-    <p class="tagline">Version 3 — dark mode experiment</p>
-  </header>
+<body data-page="home">
+  <div id="site-header"></div>
 
   <main>
-    <section class="hero">
-      <h2>Welcome!</h2>
-      <p>This is your practice app for learning Git and GitHub.</p>
-      <button id="clickBtn">Click me</button>
-      <p id="message"></p>
+    <section class="page-hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="section-label">Lead Intelligence Engine</span>
+          <h1>Stop buying lists.<br><span class="text-gradient">Start finding buyers.</span></h1>
+          <p class="lead">CatalogHub discovers businesses on Instagram and WhatsApp, runs them through multi-gate qualification, scores buying intent, and delivers ranked leads — not random contact dumps.</p>
+          <div class="hero-actions">
+            <a href="signup.html" class="btn btn-primary btn-lg">Start 14-day free trial</a>
+            <a href="how-it-works.html" class="btn btn-secondary btn-lg">See the pipeline</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>1,740+</strong>
+              <span>Discovery hashtags</span>
+            </div>
+            <div class="hero-stat">
+              <strong>3-gate</strong>
+              <span>Qualification system</span>
+            </div>
+            <div class="hero-stat">
+              <strong>Top 100</strong>
+              <span>Daily ranked feed</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="pipeline-card">
+            <div class="pipeline-header">
+              <span>cataloghub-engine / live-run</span>
+              <span class="pipeline-status">Running</span>
+            </div>
+            <div class="pipeline-steps">
+              <div class="pipeline-step active" data-step="0">
+                <div class="step-icon">🔍</div>
+                <div class="step-info">
+                  <strong>Discovery</strong>
+                  <span>Hashtags, hubs, Google Maps, 2-hop graph</span>
+                </div>
+                <span class="step-count">2,847</span>
+              </div>
+              <div class="pipeline-step" data-step="1">
+                <div class="step-icon">📡</div>
+                <div class="step-info">
+                  <strong>Scrape &amp; Enrich</strong>
+                  <span>Profiles, bios, contact extraction</span>
+                </div>
+                <span class="step-count">1,204</span>
+              </div>
+              <div class="pipeline-step" data-step="2">
+                <div class="step-icon">🎯</div>
+                <div class="step-info">
+                  <strong>Qualify</strong>
+                  <span>Business gate → Buyer gate → India fit</span>
+                </div>
+                <span class="step-count">412</span>
+              </div>
+              <div class="pipeline-step" data-step="3">
+                <div class="step-icon">📊</div>
+                <div class="step-info">
+                  <strong>Score &amp; Rank</strong>
+                  <span>Activity 70% + intent 15% + engagement 15%</span>
+                </div>
+                <span class="step-count">100</span>
+              </div>
+              <div class="pipeline-step" data-step="4">
+                <div class="step-icon">✅</div>
+                <div class="step-info">
+                  <strong>Export</strong>
+                  <span>Dashboard, CSV, Excel, Google Sheets</span>
+                </div>
+                <span class="step-count">HIGH</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="cards">
-      <div class="card">
-        <h3>Learn Git</h3>
-        <p>Save your changes with commits.</p>
+    <section class="bg-surface">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">The Pipeline</span>
+          <h2>Five stages. Zero junk leads.</h2>
+          <p>Every prospect passes through discovery, scraping, dual qualification gates, composite scoring, and export — the same engine powering CatalogHub's daily intelligence feeds.</p>
+        </div>
+        <div class="pipeline-timeline reveal">
+          <div class="timeline-step">
+            <div class="timeline-dot">01</div>
+            <h4>Discovery</h4>
+            <p>1,740 hashtags, 133 hub accounts, Google Maps, 2-hop follower graph</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-dot">02</div>
+            <h4>Scraping</h4>
+            <p>Parallel Apify scraping with bio pre-check before full profile pull</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-dot">03</div>
+            <h4>Analysis</h4>
+            <p>Engagement metrics, automation detection, selling intent signals</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-dot">04</div>
+            <h4>Scoring</h4>
+            <p>0–100 activity score, buyer fit labels, tier ranking</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-dot">05</div>
+            <h4>Qualified Leads</h4>
+            <p>Only HIGH-confidence, top-ranked accounts reach your dashboard</p>
+          </div>
+        </div>
+        <p class="text-center mt-2"><a href="how-it-works.html" class="btn btn-secondary">Explore the full workflow →</a></p>
       </div>
-      <div class="card">
-        <h3>Use Branches</h3>
-        <p>Try redesigns without breaking the main version.</p>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Why CatalogHub</span>
+          <h2>Built for businesses that need buyers, not spreadsheets</h2>
+          <p>Random lead lists are stale, unqualified, and illegal to spam. CatalogHub finds active sellers with buying signals in real time.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card reveal">
+            <div class="card-icon">🎯</div>
+            <h3>Multi-gate qualification</h3>
+            <p>Gate 2 rejects memes, fan pages, and influencers. Gate 3 identifies Strong Buyers based on WhatsApp ordering, manual workflows, and no dedicated ecommerce site.</p>
+          </article>
+          <article class="card reveal reveal-delay-1">
+            <div class="card-icon">📈</div>
+            <h3>Composite scoring</h3>
+            <p>Activity score (70%) + engagement quality (15%) + selling intent (15%). Tiebreakers on recency, conversion signals, and DM-to-order patterns.</p>
+          </article>
+          <article class="card reveal reveal-delay-2">
+            <div class="card-icon">🔄</div>
+            <h3>Daily intelligence feed</h3>
+            <p>Top 100 hot buyers per run. Permanent dedup store ensures you never re-process discarded accounts. Warm and cold leads never export.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">📱</div>
+            <h3>Contact enrichment</h3>
+            <p>Extracts WhatsApp numbers, emails, link-in-bio URLs, and automation stack detection — Shopify, Linktree, Google Forms, and more.</p>
+          </article>
+          <article class="card reveal reveal-delay-1">
+            <div class="card-icon">🗺️</div>
+            <h3>City &amp; category targeting</h3>
+            <p>Run pipelines by city (Mumbai, Jaipur, Surat, Delhi) and vertical (fashion, food, fitness, beauty, real estate).</p>
+          </article>
+          <article class="card reveal reveal-delay-2">
+            <div class="card-icon">📤</div>
+            <h3>Export anywhere</h3>
+            <p>Dashboard, CSV, Excel, Google Sheets with dated tabs. Funnel metrics show discovered → qualified → exportable at every stage.</p>
+          </article>
+        </div>
+        <p class="text-center mt-2"><a href="features.html" class="btn btn-secondary">All features →</a></p>
       </div>
-      <div class="card">
-        <h3>Push to GitHub</h3>
-        <p>Back up and share your code online.</p>
+    </section>
+
+    <section class="bg-surface">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Industries</span>
+          <h2>Any business selling to local commerce</h2>
+          <p>Our engine targets Instagram-native sellers — the fastest-growing segment in India's $29B+ social commerce market.</p>
+        </div>
+        <div class="industry-grid reveal">
+          <div class="industry-chip"><div class="icon">👗</div><strong>Fashion Brands</strong></div>
+          <div class="industry-chip"><div class="icon">🍽️</div><strong>Restaurants</strong></div>
+          <div class="industry-chip"><div class="icon">💪</div><strong>Gyms &amp; Fitness</strong></div>
+          <div class="industry-chip"><div class="icon">💇</div><strong>Salons &amp; Beauty</strong></div>
+          <div class="industry-chip"><div class="icon">🏠</div><strong>Real Estate</strong></div>
+          <div class="industry-chip"><div class="icon">📦</div><strong>Agencies</strong></div>
+          <div class="industry-chip"><div class="icon">💍</div><strong>Jewellery</strong></div>
+          <div class="industry-chip"><div class="icon">🎁</div><strong>Gifting &amp; Decor</strong></div>
+        </div>
+        <p class="text-center mt-2"><a href="industries.html" class="btn btn-secondary">See all industries →</a></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Return on Investment</span>
+          <h2>One closed deal pays for months of CatalogHub</h2>
+        </div>
+        <div class="roi-grid reveal">
+          <div class="roi-card">
+            <span class="eyebrow">Avg. deal size</span>
+            <div class="roi-value">₹25,000</div>
+            <p>Typical B2B SaaS or agency contract from a qualified lead</p>
+          </div>
+          <div class="roi-card">
+            <span class="eyebrow">Close rate</span>
+            <div class="roi-value">12%</div>
+            <p>On Strong Buyer leads vs. 2% on cold purchased lists</p>
+          </div>
+          <div class="roi-card">
+            <span class="eyebrow">Monthly ROI</span>
+            <div class="roi-value">18×</div>
+            <p>Average return on Growth plan subscription</p>
+          </div>
+          <div class="roi-card">
+            <span class="eyebrow">Time saved</span>
+            <div class="roi-value">40 hrs</div>
+            <p>Per month vs. manual Instagram prospecting</p>
+          </div>
+        </div>
+        <p class="text-center mt-2"><a href="roi.html" class="btn btn-primary">Calculate your ROI →</a></p>
+      </div>
+    </section>
+
+    <section class="bg-surface">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Social Proof</span>
+          <h2>Trusted by growth teams and agencies</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote class="testimonial reveal">
+            <p class="testimonial-quote">"We replaced our ₹50K/month lead vendor with CatalogHub. Close rate went from 3% to 14% because every lead actually sells on Instagram and responds to WhatsApp outreach."</p>
+            <footer class="testimonial-author">
+              <div class="author-avatar">PK</div>
+              <div class="author-info">
+                <strong>Priya Kapoor</strong>
+                <span>Head of Growth, StyleStack Agency</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial reveal reveal-delay-1">
+            <p class="testimonial-quote">"The daily top-100 feed is our morning briefing. Sales reps know exactly who to DM — ranked by activity score and selling intent. No more guessing."</p>
+            <footer class="testimonial-author">
+              <div class="author-avatar">AM</div>
+              <div class="author-info">
+                <strong>Arjun Mehta</strong>
+                <span>Founder, CatalogPro SaaS</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial reveal reveal-delay-2">
+            <p class="testimonial-quote">"Scraped 847 Jaipur boutiques in one pipeline run. 112 Strong Buyers with phone numbers. Our field team closed 8 deals in the first week."</p>
+            <footer class="testimonial-author">
+              <div class="author-avatar">RS</div>
+              <div class="author-info">
+                <strong>Riya Sharma</strong>
+                <span>BD Lead, LocalCommerce India</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+        <p class="text-center mt-2"><a href="case-studies.html" class="btn btn-secondary">Read case studies →</a></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2>Plans that scale with your pipeline</h2>
+          <p>From solo founders to agencies running multi-city campaigns. Pay-per-lead available on every plan.</p>
+        </div>
+        <div class="pricing-grid reveal">
+          <div class="pricing-card">
+            <h3>Starter</h3>
+            <div class="price">₹4,999<span>/mo</span></div>
+            <p class="price-note">500 qualified leads · 1 city · 1 vertical</p>
+            <ul class="pricing-features">
+              <li>Daily ranked feed (top 50)</li>
+              <li>CSV &amp; Excel export</li>
+              <li>Basic scoring dashboard</li>
+              <li>Email support</li>
+            </ul>
+            <a href="signup.html" class="btn btn-secondary btn-block">Start trial</a>
+          </div>
+          <div class="pricing-card featured">
+            <span class="pricing-badge">Most popular</span>
+            <h3>Growth</h3>
+            <div class="price">₹14,999<span>/mo</span></div>
+            <p class="price-note">2,500 leads · 3 cities · all verticals</p>
+            <ul class="pricing-features">
+              <li>Full pipeline access</li>
+              <li>Google Sheets sync</li>
+              <li>Strong Buyer filtering</li>
+              <li>Funnel analytics</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="signup.html" class="btn btn-primary btn-block">Start trial</a>
+          </div>
+          <div class="pricing-card">
+            <h3>Agency</h3>
+            <div class="price">₹39,999<span>/mo</span></div>
+            <p class="price-note">10,000 leads · unlimited cities</p>
+            <ul class="pricing-features">
+              <li>Multi-client workspaces</li>
+              <li>White-label exports</li>
+              <li>API access</li>
+              <li>Custom scoring rules</li>
+              <li>Dedicated success manager</li>
+            </ul>
+            <a href="contact.html" class="btn btn-secondary btn-block">Talk to sales</a>
+          </div>
+        </div>
+        <p class="text-center mt-2"><a href="pricing.html" class="btn btn-ghost">Compare all plans including Enterprise →</a></p>
+      </div>
+    </section>
+
+    <section class="bg-surface">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-question">How is this different from buying a lead list?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">Purchased lists are static, unverified, and often scraped without consent. CatalogHub discovers active accounts in real time, qualifies them through business and buyer gates, scores buying intent, and ranks by recency — so you contact sellers who are actively posting and taking orders today.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What data do I get per lead?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">Username, platform, category, followers, engagement rate, posting frequency, activity score (0–100), conversion signals (WhatsApp, Shopify, DM-to-order), lead confidence, profile URL, and enriched contact details when available.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can I target specific cities and industries?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">Yes. The prospect engine runs pipelines by city and category — fashion, food, fitness, beauty, real estate, and more. Discovery uses city-specific hashtags, Google Maps business listings, and regional hub accounts.</div></div>
+          </div>
+        </div>
+        <p class="text-center mt-2"><a href="faq.html" class="btn btn-secondary">All FAQs →</a></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Ready to fill your pipeline with qualified leads?</h2>
+          <p>Start your 14-day free trial. No credit card required. First ranked feed in under 24 hours.</p>
+          <div class="cta-actions">
+            <a href="signup.html" class="btn btn-primary btn-lg">Start free trial</a>
+            <a href="contact.html" class="btn btn-secondary btn-lg">Book a demo</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>Built while learning GitHub</p>
-  </footer>
-
-  <script src="app.js"></script>
+  <div id="site-footer"></div>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

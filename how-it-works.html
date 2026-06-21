@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How it Works — CatalogHub</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="how-it-works">
+  <div id="site-header"></div>
+  <main>
+    <header class="page-banner">
+      <div class="container reveal">
+        <span class="section-label">Complete Pipeline</span>
+        <h1>Discovery → Scraping → Analysis → Scoring → Qualified Leads</h1>
+        <p>The exact workflow our production engines run — from 2,800+ raw discoveries to 100 ranked, export-ready buyers.</p>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="pipeline-timeline reveal">
+          <div class="timeline-step">
+            <div class="timeline-dot">01</div>
+            <h4>Discovery</h4>
+            <p>Multi-round parallel discovery</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-dot">02</div>
+            <h4>Scraping</h4>
+            <p>Profile + post enrichment</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-dot">03</div>
+            <h4>Analysis</h4>
+            <p>Engagement + intent signals</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-dot">04</div>
+            <h4>Scoring</h4>
+            <p>Composite rank + buyer fit</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-dot">05</div>
+            <h4>Export</h4>
+            <p>Top 100 qualified leads</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-surface">
+      <div class="container">
+        <article class="card reveal" style="margin-bottom:1.25rem">
+          <span class="eyebrow">Stage 01</span>
+          <h3 style="font-size:1.5rem;margin:0.75rem 0">Discovery — cast a wide net, intelligently</h3>
+          <p style="color:var(--text-secondary);margin-bottom:1rem">Three discovery engines run in parallel each cycle:</p>
+          <ul class="pricing-features">
+            <li><strong>Hashtag discovery</strong> — 1,740 long-tail India hashtags (city × category × suffix). 30 tags rotated per round across 3+ passes.</li>
+            <li><strong>Hub account crawling</strong> — 133 seed accounts in 5 clusters (bridal, jewellery, ethnic, street, luxury). 4 hubs per cluster per round.</li>
+            <li><strong>2-hop follower graph</strong> — Expands from fashion-signal accounts to their followers who also show selling patterns.</li>
+            <li><strong>Google Maps cross-ref</strong> — Finds Instagram handles linked to local business listings by city and category.</li>
+          </ul>
+          <p style="margin-top:1rem;font-family:var(--font-mono);font-size:0.875rem;color:var(--accent)">Typical output: 2,000–3,000 raw handles per pipeline run</p>
+        </article>
+
+        <article class="card reveal" style="margin-bottom:1.25rem">
+          <span class="eyebrow">Stage 02</span>
+          <h3 style="font-size:1.5rem;margin:0.75rem 0">Scraping — enrich every profile</h3>
+          <p style="color:var(--text-secondary);margin-bottom:1rem">Apify-powered Instagram scraping with smart throttling:</p>
+          <ul class="pricing-features">
+            <li><strong>Bio pre-check</strong> — Lightweight username/bio gate before expensive full post scrape</li>
+            <li><strong>Profile scrape</strong> — Followers, post count, bio, business category, verification status</li>
+            <li><strong>Post analysis</strong> — Last 10 posts: avg likes, comments, views, posting frequency, last post date</li>
+            <li><strong>Contact extraction</strong> — WhatsApp links, emails, external URLs, link-in-bio services</li>
+          </ul>
+          <p style="margin-top:1rem;font-family:var(--font-mono);font-size:0.875rem;color:var(--accent)">Typical output: 800–1,200 enriched profiles</p>
+        </article>
+
+        <article class="card reveal" style="margin-bottom:1.25rem">
+          <span class="eyebrow">Stage 03</span>
+          <h3 style="font-size:1.5rem;margin:0.75rem 0">Analysis — filter noise, detect intent</h3>
+          <ul class="pricing-features">
+            <li><strong>Strict India filter</strong> — Bio, hashtags, or location must confirm India market fit</li>
+            <li><strong>Follower threshold</strong> — Minimum 5,000 followers for fashion vertical (configurable per industry)</li>
+            <li><strong>Selling intent detection</strong> — WhatsApp ordering, Shopify links, "DM to order" captions, price mentions</li>
+            <li><strong>Automation stack analysis</strong> — Detects Shopify, Dukaan, Linktree, Google Forms, manual workflows</li>
+            <li><strong>Gate 2 rejection</strong> — Memes, fan pages, news, influencers, personal accounts permanently discarded</li>
+          </ul>
+          <p style="margin-top:1rem;font-family:var(--font-mono);font-size:0.875rem;color:var(--accent)">Typical output: 300–500 qualified businesses</p>
+        </article>
+
+        <article class="card reveal" style="margin-bottom:1.25rem">
+          <span class="eyebrow">Stage 04</span>
+          <h3 style="font-size:1.5rem;margin:0.75rem 0">Scoring — rank by buying probability</h3>
+          <p style="color:var(--text-secondary);margin-bottom:1rem">Composite ranking formula:</p>
+          <ul class="pricing-features">
+            <li><strong>Activity score (70%)</strong> — Engagement rate, views, posting frequency, recency</li>
+            <li><strong>Engagement quality (15%)</strong> — Comment-to-like ratio, view consistency</li>
+            <li><strong>Selling intent (15%)</strong> — WhatsApp links, DM-to-order, conversion signal strength</li>
+            <li><strong>Buyer fit label</strong> — Strong Buyer / Possible Buyer / Weak Buyer / Not a Buyer</li>
+            <li><strong>Lead score adjustments</strong> — No website (+22), manual ordering (+18), WhatsApp-only sales (+8)</li>
+          </ul>
+          <p style="margin-top:1rem;font-family:var(--font-mono);font-size:0.875rem;color:var(--accent)">Export gate: activity score ≥70, HIGH confidence only</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="eyebrow">Stage 05</span>
+          <h3 style="font-size:1.5rem;margin:0.75rem 0">Export — deliver ranked, actionable leads</h3>
+          <ul class="pricing-features">
+            <li><strong>Top 100 daily feed</strong> — Ranked 1–100 with top 10 highlighted</li>
+            <li><strong>Rich data per lead</strong> — Username, platform, category, followers, engagement rate, activity score, conversion signals, profile URL</li>
+            <li><strong>Multi-format</strong> — Dashboard, CSV, Excel, Google Sheets (dated tabs)</li>
+            <li><strong>Funnel report</strong> — Full conversion metrics from discovery to exportable buyers</li>
+          </ul>
+          <p style="margin-top:1rem;font-family:var(--font-mono);font-size:0.875rem;color:var(--accent)">Final output: 100 HIGH-confidence ranked leads ready for outreach</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Run your first pipeline</h2>
+          <p>Configure city, category, and discovery depth. First ranked feed delivered within 24 hours.</p>
+          <div class="cta-actions">
+            <a href="signup.html" class="btn btn-primary btn-lg">Start free trial</a>
+            <a href="dashboard.html" class="btn btn-secondary btn-lg">Preview dashboard</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

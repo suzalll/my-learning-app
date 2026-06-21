@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — CatalogHub</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="dashboard">
+  <div id="site-header"></div>
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar">
+      <nav class="sidebar-nav" aria-label="Dashboard navigation">
+        <a href="dashboard.html" class="active">📊 Overview</a>
+        <a href="dashboard.html#leads">🎯 Leads</a>
+        <a href="dashboard.html#pipelines">⚙️ Pipelines</a>
+        <a href="dashboard.html#exports">📤 Exports</a>
+        <a href="dashboard.html#settings">🔧 Settings</a>
+      </nav>
+    </aside>
+    <main class="dashboard-main">
+      <div class="dashboard-header reveal">
+        <div>
+          <span class="eyebrow">Dashboard</span>
+          <h1>Lead Intelligence</h1>
+          <p style="color:var(--text-muted);font-size:0.875rem;margin-top:0.25rem">Jaipur · Fashion · Last run: today 06:00 IST</p>
+        </div>
+        <div style="display:flex;gap:0.5rem">
+          <button class="btn btn-secondary btn-sm">Run pipeline</button>
+          <a href="#" class="btn btn-primary btn-sm">Export CSV</a>
+        </div>
+      </div>
+
+      <div class="stats-grid reveal">
+        <div class="stat-card">
+          <div class="stat-label">Discovered</div>
+          <div class="stat-value">2,847</div>
+          <div class="stat-change">↑ 12% vs last run</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Qualified businesses</div>
+          <div class="stat-value">412</div>
+          <div class="stat-change">Gate 2 pass rate: 14.5%</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Strong Buyers</div>
+          <div class="stat-value">89</div>
+          <div class="stat-change">↑ 8 new since yesterday</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Exported today</div>
+          <div class="stat-value">100</div>
+          <div class="stat-change">Top ranked · HIGH confidence</div>
+        </div>
+      </div>
+
+      <div class="data-table-wrap reveal" id="leads">
+        <div class="data-table-header">
+          <div>
+            <h3 style="font-size:1rem">Today's ranked leads</h3>
+            <p style="font-size:0.8125rem;color:var(--text-muted)">hot_buyers_2026_06_21 · Top 100 · Activity score ≥70</p>
+          </div>
+          <div style="display:flex;gap:0.5rem">
+            <select style="padding:0.4rem 0.75rem;background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text-primary);font-size:0.8125rem">
+              <option>All tiers</option>
+              <option>Strong Buyer</option>
+              <option>Possible Buyer</option>
+            </select>
+          </div>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Account</th>
+              <th>Category</th>
+              <th>Followers</th>
+              <th>Activity</th>
+              <th>Buyer fit</th>
+              <th>Signals</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><strong>@jaipur_boutique_official</strong></td>
+              <td>Clothing</td>
+              <td>24,500</td>
+              <td><strong style="color:var(--accent)">94</strong></td>
+              <td><span class="badge badge-strong">Strong</span></td>
+              <td style="font-size:0.75rem;color:var(--text-muted)">WhatsApp · DM order</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>@ethnic_wear_jaipur</strong></td>
+              <td>Clothing</td>
+              <td>18,200</td>
+              <td><strong style="color:var(--accent)">91</strong></td>
+              <td><span class="badge badge-strong">Strong</span></td>
+              <td style="font-size:0.75rem;color:var(--text-muted)">WhatsApp · No website</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>@royal_jewels_in</strong></td>
+              <td>Jewellery</td>
+              <td>31,800</td>
+              <td><strong style="color:var(--accent)">88</strong></td>
+              <td><span class="badge badge-strong">Strong</span></td>
+              <td style="font-size:0.75rem;color:var(--text-muted)">Linktree · DM order</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><strong>@surat_fashion_hub</strong></td>
+              <td>Mixed</td>
+              <td>12,400</td>
+              <td><strong style="color:var(--accent)">85</strong></td>
+              <td><span class="badge badge-high">Possible</span></td>
+              <td style="font-size:0.75rem;color:var(--text-muted)">Google Form · WhatsApp</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><strong>@delhi_street_style</strong></td>
+              <td>Clothing</td>
+              <td>9,800</td>
+              <td><strong style="color:var(--accent)">82</strong></td>
+              <td><span class="badge badge-high">Possible</span></td>
+              <td style="font-size:0.75rem;color:var(--text-muted)">WhatsApp · Manual</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="empty-state" style="padding:1.25rem;border-top:1px solid var(--border)">
+          Showing 5 of 100 leads · <a href="signup.html" style="color:var(--accent)">Upgrade to export full feed</a>
+        </div>
+      </div>
+
+      <div class="card reveal mt-2" id="pipelines" style="margin-top:2rem;padding:1.5rem">
+        <h3 style="margin-bottom:1rem">Active pipelines</h3>
+        <div style="display:grid;gap:0.75rem">
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:0.85rem 1rem;background:var(--bg-elevated);border-radius:var(--radius-md);border:1px solid var(--border)">
+            <div>
+              <strong style="font-size:0.875rem">Jaipur · Fashion</strong>
+              <span style="display:block;font-size:0.75rem;color:var(--text-muted)">Daily feed · Last run 6h ago</span>
+            </div>
+            <span class="badge badge-high">Active</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:0.85rem 1rem;background:var(--bg-elevated);border-radius:var(--radius-md);border:1px solid var(--border);opacity:0.6">
+            <div>
+              <strong style="font-size:0.875rem">Mumbai · Restaurants</strong>
+              <span style="display:block;font-size:0.75rem;color:var(--text-muted)">Upgrade to Growth plan to activate</span>
+            </div>
+            <span class="badge badge-warm">Locked</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
